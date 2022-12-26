@@ -1,4 +1,4 @@
-FROM debian:11.6 as ubuntu_base
+FROM debian:11.6
 
 ENV HOME_DIR="/home/test"
 RUN mkdir ${HOME_DIR}
