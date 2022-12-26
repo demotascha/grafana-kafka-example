@@ -6,10 +6,7 @@ positions:
   filename: /tmp/promtail-positions.yaml
 
 clients:
-  - url: ${GRAFANA_LOGS_WRITE_URL}
-    basic_auth:
-      username: ${GRAFANA_LOGS_USERNAME}
-      password: ${GRAFANA_LOGS_API_KEY}
+  - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
 - job_name: varlogs
