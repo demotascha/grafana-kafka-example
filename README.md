@@ -13,6 +13,8 @@ Requires Docker and Docker Compose
 ```
 This will start the containers: zookeeper, kafka, producer, grafana, prometheus, tempo, loki and promtail
 
+Then you can hit http://localhost:3001 in your browser.
+
 ## Stop the containers
 ```
 ./ctl.sh down
