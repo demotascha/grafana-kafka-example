@@ -3,6 +3,7 @@
 case "$1" in
   build)
     docker build -t kafka_producer -f kafka_producer.Dockerfile .
+    docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
   ;;
   run)
     # For testing kafka_producer
